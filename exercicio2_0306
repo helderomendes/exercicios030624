@@ -1,0 +1,11 @@
+# 6 - Duda tem uma lista de amigos e uma lista de presentes que estes amigos gostariam de receber.
+# ela fez a anotação na ordem, porém estão em listas separadas. A lista de amigos é:
+amigos = ["Anna", "Pedro", "Ramon", "Gabriel", "Lucas", "Thiago", "Val"]
+# A lista de presentes é:
+presentes_favoritos = ["Livro", "Filme", "Passeio no restaurante", "Relógio",
+                       "Uma garrafa de cerveja artesanal", "Uma ida ao cinema", "Um doguinho"]
+# Crie um algoritmo que imprima essas informações no seguinte formato:
+# {nome do amigo}: {presente favorito}
+
+for nome, presente in zip(amigos, presentes_favoritos):
+    print(f'{nome}: {presente}')
